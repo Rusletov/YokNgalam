@@ -83,27 +83,12 @@ p#logo a {
   transition: .5s;
 }
 
-#about img {
-  float: left;
-}
-
 #destination {
   background: #f2fefe;
 }
 
-#destination-caption h3, #destination-caption form {
-  float: left;
-}
-
-#destination-caption div > span {
-  float: right;
-}
-
-#destination-caption p {
-  clear: both;
-}
-
 #destination .overlay-content {
+    padding: 30px;
     position: relative;
     min-height: inherit; /* inerites the height of the parent */
     background-color: rgba(255, 255, 255, 0.8);
@@ -113,28 +98,28 @@ p#logo a {
 #destination .overlay-content::after { /* make an arrow next to paragraph*/
     content: '';
     position: absolute;
-    top: 50%;
+    top: 35%;
     width: 15px;
     height: 30px;
     opacity: .8;
 }
 
+.emptyfix {
+    padding: 1px;
+    background-clip: 
+}
+
 /* batu */
 
 #batu {
-    background: url(../images/batu.jpg) no-repeat;
-    min-height: 518px;
-    background-size: cover; /* Never used this before */
-}
-
-#batu .overlay-content {
-    float: right;
-    width: 40%;
+    background: url(../images/batu.jpg) no-repeat bottom center/cover;
+    margin-bottom: 30px;
+    /*min-height: 518px;*/
 }
 
 #batu .overlay-content::after { /* make an arrow next to paragraph*/
     background: url(../images/arrow-left.png) no-repeat;
-    transform: translate(-100%, -50%);
+    transform: translate(-45px, -50%);
 }
 
 /* end batu */
@@ -142,9 +127,8 @@ p#logo a {
 /* bromo */
 
 #bromo {
-    min-height: 361px;
-    background: url(../images/bromo.jpg) no-repeat;
-    background-size: cover; /* Never used this before */
+    /*min-height: 361px;*/
+    background: url(../images/bromo.jpg) no-repeat bottom center/cover;
 }
 
 #bromo .overlay-content {
@@ -158,12 +142,9 @@ p#logo a {
 
 /* end bromo*/
 
-#beach {
-    display: inline-block;
-    background: url(../images/beach.jpg) no-repeat;
-    background-size: cover;
-    /*min-width: 471px;*/
-    min-height: 361px
+#bromo + div {
+    background: url(../images/beach.jpg) no-repeat center center/cover;
+    padding: 150px;
 }
 
 /* end beach */
@@ -227,6 +208,14 @@ h1 {
 
 main p {
     color: gray;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-center {
+    text-align: center;
 }
 
 /* end text formatting */

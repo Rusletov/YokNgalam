@@ -40,48 +40,71 @@
     </div>
 
     <main>
-      <div class="container">
+      <section> <!-- About section-->
+        <div class="container">
         <div id="about" class="row">
-          <img src="images/city.png" alt="City of love">
-          <h2 class="blue-text"><span class="turquoise-text">City of</span> love</h2>
-          <p>Malang is the second largest city in East Java province, Indonesia. It has a history dating back to the ancient Mataram Kingdom. The city is famous for its cool temperature. People in East Java sometimes call it "Paris of East Java.</p>
+          <div class="five columns">
+            <img src="images/city.png" alt="City of love">
+          </div>
+          <div class="seven columns">
+            <h2 class="blue-text"><span class="turquoise-text">City of</span> love</h2>
+            <p>Malang is the second largest city in East Java province, Indonesia. It has a history dating back to the ancient Mataram Kingdom. The city is famous for its cool temperature. People in East Java sometimes call it "Paris of East Java.</p>
+          </div>
         </div>
       </div>
+      </section>
 
       <section id="destination">
-        <div class="container" id="destination-caption">
+          
+        <div class="container" id="about-destinations">
           <div class="row">
-            <h2 class="blue-text"><span class="turquoise-text ">Des</span>tination</h2>
-            <span><img src="">See basic regulation</span>
-            <p>Being around by many mountain, Malang not only came with mountain vacation, but our beach, cultural spot, and Human Interest is worth to experienced.</p>
-            <form>
+            <div class="eight columns">
+              <h2 class="blue-text"><span class="turquoise-text ">Des</span>tination</h2>
+              <p>Being around by many mountain, Malang not only came with mountain vacation, but our beach, cultural spot, and Human Interest is worth to experienced.</p>
+            </div>
+            <div class="four columns text-center">
+              <a><img src="">See basic regulation</a>
+            </div>
+          </div>
+          <div class="row">
+            <div class="seven columns">
+              <form>
               <input type="text" name="destination" placeholder="Search destination">
-            </form>
-            <span>All places / Recommended places</span>
-          </div>
-
-          <div class="row">
-            <div id="batu" class="twelve columns">
-              <div class="overlay-content">
-              <img src="images/circle-icon.png">
-              <h3>Batu</h3>
-              <p> is a city located in East Java Province of Indonesia. It is situated about 20 km to the northwest of Malang. Formerly, it was a part of Malang Regency; but in 2001, Batu became an independent city.A population of 190,000 people, it lies on the southern slopes of Gunung Welirang. Its population largely consists of Javanese.</p>
-              </div>
+              </form>
+            </div>
+            <div class="five columns text-uppercase text-center">
+              <a href="#">All places / Recommended places</a>
             </div>
           </div>
 
-          <div class="row">
-            <div class="six columns" id="bromo">
-              <div class="overlay-content">
-                <h3>Bromo</h3>
-                <img src="images/"> <!-- can be replaced by pseudo-element ::before -->
-                <p>Mount Bromo is an active volcano and part of the Tengger massif, in East Java, Indonesia. At 2,329 metres (7,641 ft) it is not the highest peak of the massif, but is the most well known</p>
+          <article id="batu">
+            <div class="row">
+              <div class="six columns emptyfix"></div>
+              <div class="six columns overlay-content">
+                <h3>Batu</h3>
+                <p> is a city located in East Java Province of Indonesia. It is situated about 20 km to the northwest of Malang. Formerly, it was a part of Malang Regency; but in 2001, Batu became an independent city.A population of 190,000 people, it lies on the southern slopes of Gunung Welirang. Its population largely consists of Javanese.</p>
               </div>
             </div>
-            <div class="six columns" id="beach"></div>
+          </article>
+            
+          <article>
+              <div class="row">
+                <div id="bromo" class="seven columns">
+                  <div class="overlay-content">
+                  <h3>Bromo</h3>
+                  <img src="images/"> <!-- can be replaced by pseudo-element ::before -->
+                  <p>Mount Bromo is an active volcano and part of the Tengger massif, in East Java, Indonesia. At 2,329 metres (7,641 ft) it is not the highest peak of the massif, but is the most well known</p>
+                  </div>
+                </div>
+                <div id="beach" class="five columns">1</div>
+              </div>
+            
+          </article>
+
             <div class="row" id="pagination">pagination</div>
           </div>
         </div>
+          
       </section>
 
     </main>
