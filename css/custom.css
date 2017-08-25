@@ -1,8 +1,11 @@
 /*/// For Desktops ///*/
 
-body {
+* {
   box-sizing: border-box; /* include padding and margin into the measure of the elements.*/
-	font-size: medium;
+}
+
+body {
+  font-size: medium;
   letter-spacing: 1px;
   line-height: 1.5;
   font-family: 'Lato', sans-serif;
@@ -62,7 +65,7 @@ p#logo a {
   position: relative;
   color: white;
   text-align: center;
-  background: #9bddd8 url(../images/mountain.png) no-repeat center;
+  background: #9bddd8 url(../images/mountain.png) no-repeat center bottom;
   background-size: cover;
   min-height: 640px;
 }
@@ -87,67 +90,62 @@ p#logo a {
   background: #f2fefe;
 }
 
-#destination .overlay-content {
-    padding: 30px;
-    position: relative;
-    min-height: inherit; /* inerites the height of the parent */
-    background-color: rgba(255, 255, 255, 0.8);
-    height: 100%;
-}
-
-#destination .overlay-content::after { /* make an arrow next to paragraph*/
-    content: '';
-    position: absolute;
-    top: 35%;
-    width: 15px;
-    height: 30px;
-    opacity: .8;
-}
-
-.emptyfix {
-    padding: 1px;
-    background-clip: 
-}
-
-/* batu */
+/* Batu */
 
 #batu {
-    background: url(../images/batu.jpg) no-repeat bottom center/cover;
-    margin-bottom: 30px;
-    /*min-height: 518px;*/
+  background: url(../images/batu.jpg) no-repeat right bottom/cover;
+  width: 100%;
+  height: 520px;
+  padding: 0;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden; /* not the best idea, as the content will hide when resized*/
 }
 
-#batu .overlay-content::after { /* make an arrow next to paragraph*/
-    background: url(../images/arrow-left.png) no-repeat;
-    transform: translate(-45px, -50%);
+#batu .description {
+  float: right;
+  width: 50%;
+  height: inherit;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.93);
 }
 
-/* end batu */
+/* End Batu */
 
-/* bromo */
+/* Bromo */
 
 #bromo {
-    /*min-height: 361px;*/
-    background: url(../images/bromo.jpg) no-repeat bottom center/cover;
+  background: url(../images/bromo.jpg) no-repeat right bottom/cover;
+  /*width: 50%;
+  /*width: 100%;
+  height: 320px;
+  padding: 0;
+  margin-bottom: 30px;
+  position: relative;*/
 }
 
-#bromo .overlay-content {
-    width: 50%;
+#bromo .description {
+  float: left;
+  width: 50%;
+  height: inherit;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.93);
 }
 
-#bromo .overlay-content::after { /* make an arrow next to paragraph*/
-    background: url(../images/arrow-right.png) no-repeat;
-    left: 100%
+/* End Bromo */
+
+/* Beach*/
+
+#beach {
+  background: url(../images/beach.jpg) no-repeat;
+  height: 343px;
 }
 
-/* end bromo*/
+/* End Beach*/
 
-#bromo + div {
-    background: url(../images/beach.jpg) no-repeat center center/cover;
-    padding: 150px;
+.pagination {
+  text-align: center;
 }
-
-/* end beach */
 
 /* end layout */
 
